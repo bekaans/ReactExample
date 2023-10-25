@@ -1,17 +1,18 @@
+import { useState } from "react";
 import Berke from "./Components/Berke.jsx";
 import Deneme from "./Components/Deneme.jsx";
+import { useEffect } from "react";
 
 function App() {
-  const denemelik = "wqdqfqwfwqgqg";
-  const clickFunction = () =>{
-    console.log("sen tıkladın");
-  }
+  const [status,SetStatus] = useState("deneme");
+  useEffect(()=>{
+      SetStatus("Deneme2")
+  },[])
+  
   return (
     
     <div className="App">
-     <Berke props={denemelik}></Berke>
-      <Deneme></Deneme>
-    <button onClick={clickFunction}>clickkk</button>
+      {status}
     </div>
   );
 }
