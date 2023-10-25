@@ -1,18 +1,19 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import { BsSearch } from "react-icons/bs";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Remaster from "./Components/Remaster"
+import Home from "./Components/Home"
+
 function App() {
-  const [status,SetStatus] = useState("deneme");
-  useEffect(()=>{
-      SetStatus("Deneme2")
-  },[])
-  
   return (
     
-    <div className="App">
-     <BsSearch/>
-    </div>
-  );
+    <>
+     <BrowserRouter>
+     <Routes>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="detail" element={<Remaster/>}></Route>
+      </Routes>
+      </BrowserRouter>
+   </>
+  )
 }
 
 export default App;
