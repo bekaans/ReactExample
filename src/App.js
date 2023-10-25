@@ -1,8 +1,6 @@
 import { useState } from "react";
-import Berke from "./Components/Berke.jsx";
-import Deneme from "./Components/Deneme.jsx";
 import { useEffect } from "react";
-
+import { BsSearch } from "react-icons/bs";
 function App() {
   const [status,SetStatus] = useState("deneme");
   useEffect(()=>{
@@ -12,7 +10,7 @@ function App() {
   return (
     
     <div className="App">
-      {status}
+     <BsSearch/>
     </div>
   );
 }
