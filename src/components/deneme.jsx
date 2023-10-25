@@ -1,6 +1,6 @@
-const deneme = () => {
+const Deneme = () =>{
     return(
-        <div> deneme 123</div>
+        <div>selam ben deneme 123</div>
     )
 }
-export default deneme;
+export default Deneme
