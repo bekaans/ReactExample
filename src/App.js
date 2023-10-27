@@ -2,7 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Remaster from "./Components/Remaster"
 import Home from "./Components/Home"
 
-function App() {
+function App() { 
+
   return (
     
     <>
@@ -12,7 +13,9 @@ function App() {
       <Route path="detail" element={<Remaster/>}></Route>
       </Routes>
       </BrowserRouter>
+      
    </>
+ 
   )
 }
 

@@ -1,6 +1,6 @@
 const Remaster = () => {
     return (
-        <div>retail remaster</div>
+        <div>Detailin içindesin</div>
     )
 }
 export default Remaster
