@@ -1,6 +1,6 @@
 const Home =()=>{
     return(
-        <div>Home nun içindesin1</div>
+        <div>Home nun içindesin2</div>
     )
 }
 export default Home
